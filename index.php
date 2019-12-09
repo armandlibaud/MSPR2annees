@@ -1,10 +1,10 @@
 <?php require_once 'includes/header.php'; ?>
 <?php use Carbon\Carbon; ?>
 
-    <section>
+    <section >
         <div class="container">
 
-            <?php echo Carbon::make(date('Y-m-d 09:25:00'))->diffForHumans(); ?>
+          <!--  <?php echo Carbon::make(date('Y-m-d 09:25:00'))->diffForHumans(); ?> -->
 
         </div>
         <div>
@@ -14,7 +14,7 @@
 
 <body>
 <main>
-    <div class="container">
+    <div class="container mt-5">
     <div class="row">
     <div class= "col-lg-6">
    <div class="card text-center">
@@ -22,7 +22,7 @@
            <p>Se connecter </p>
        </div>
        <div class="card-body">
-           <?php require_once 'register.php'; ?>
+           <?php require_once 'login.php'; ?>
        </div>
    </div>
     </div>
