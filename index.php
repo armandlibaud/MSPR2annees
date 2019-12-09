@@ -7,6 +7,9 @@
             <?php echo Carbon::make(date('Y-m-d 09:25:00'))->diffForHumans(); ?>
 
         </div>
+        <div>
+
+        </div>
     </section>
 
 <body>

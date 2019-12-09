@@ -38,7 +38,7 @@
                 <nav>
                     <b> <a class="a" href="index.php"> Accueil | </a> </b>
                     <b> <a class="a" href="profil.php"> Mon profil | </a> </b>
-                    <b> <a class="a" href="login.php"> Connexion</a> </b>
+                    <b> <a class="a" href="register.php"> Connexion</a> </b>
 
                     <form class="recherche" action="recherche.php">
                         <input type="search" name="search" placeholder="Armand Libaud">
