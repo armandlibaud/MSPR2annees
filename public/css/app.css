@@ -11356,3 +11356,85 @@ a.text-dark:focus {
   }
 }
 
+
+/** MON css
+
+ */
+/** header **/
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #becece;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+}
+/* logo + "Besocial" */
+.titre{
+  display: flex;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+}
+
+.logo{
+  position: relative;
+  height: 75px;
+  width: 75px;
+}
+
+
+.navbar{
+  text-align: right;
+  flex:1;
+  text-decoration:
+
+
+}
+
+.recherche{
+  padding-left: 18px;
+  display: inline;
+}
+
+.ok{
+  background-color: #153c49;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/** footer **/
+footer{
+  background-color: #becece;
+  position: relative;
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  width: 100%;
+  box-sizing : border-box;
+  padding: 12px;
+  text-align: center;
+}
+
+.footer{
+  margin-top: 30px;
+}
+
+.copyright{
+  font-size: 25px;
+}
+
+/* nom des pages dans header et footer */
+.a{
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+
+}
+
+

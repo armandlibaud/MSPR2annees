@@ -9,4 +9,11 @@
         </div>
     </section>
 
+<body>
+<main>
+    <h1> Fil d'actualité </h1>
+
+
 <?php require_once 'includes/footer.php'; ?>
+
+
