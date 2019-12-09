@@ -31,12 +31,11 @@
 
             <div class="titre">
                 <a  href="index.php"><img class="logo" src="public/img/logo.png"></a>
-                <b> <a class="home" href="index.php">BeSocial</a> </b>
             </div>
 
             <div class="navbar col-lg-6">
                 <nav>
-                    <b> <a class="a" href="index.php"> Accueil | </a> </b>
+                    <b> <a class="a" href="home.php"> Accueil | </a> </b>
                     <b> <a class="a" href="profil.php"> Mon profil | </a> </b>
                     <b> <a class="a" href="register.php"> Connexion</a> </b>
 
