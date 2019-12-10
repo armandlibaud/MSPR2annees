@@ -1,8 +1,9 @@
 <?php
 
 $database = [
-    'host' = 'localhost',
-    'usename' = 'root',
-    'password' = '',
+    'host' => 'localhost',
+    'dbname' => 'mspr',
+    'usename' => 'root',
+    'password' => 'root',
 ];
 
