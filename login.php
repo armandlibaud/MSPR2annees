@@ -6,17 +6,17 @@
                     <p>Se connecter </p>
                 </div>
                 <div class="card-body">
-                    <form method="POST" class="text-center "><div class="form-group">
+                    <form action="./asset/login.php" method="POST" class="text-center ">
+                        <div class="form-group">
                             <label for="identifiant" class="mb-0 mt-3">Votre identifiant</label>
-                            <input type="text" class="form-control" placeholder="Identifiant">
+                            <input  name="email" type="text" class="form-control" placeholder="Identifiant">
                         </div>
 
                         <div class="form-group">
                             <label  for="mot de passe" class="mt-3 mb-0">Votre Mot de Passe </label>
-                            <input type="email" class="form-control"  placeholder="name@example.com">
+                            <input name="password" type="password" class="form-control"  placeholder="Mot de passe">
                         </div>
-
-                        <input class="mt-3 rounded bg-light " type="submit" name="connexion" value="connexion">
+                        <button class="mt-3 rounded bg-light ">Se connecter</button>
                     </form>
                 </div>
             </div>

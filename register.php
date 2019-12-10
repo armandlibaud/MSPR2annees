@@ -4,34 +4,34 @@
             <p>S'inscrire</p>
         </div>
         <div class="card-body">
-            <form>
+            <form action="./asset/register.php" method="POST">
                 <div class="form-group">
-
-                    <input type="text" class="form-control" placeholder="Prénom">
+                    <input name="first_name" type="text" class="form-control" placeholder="Prénom" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nom">
+                    <input name="last_name" type="text" class="form-control" placeholder="Nom" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control"  placeholder="name@example.com">
+                    <input name="email" type="email" class="form-control"  placeholder="name@example.com" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="numéro de télephone">
+                    <input name="phonenumber" type="tel" class="form-control" placeholder="numéro de télephone">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Mot de passe">
+                    <input name="password" type="password" class="form-control" placeholder="Mot de passe" required>
                 </div>
                 <div class="form-group">
-                    <input type="date" class="form-control" placeholder="Date de naissance">
+                    <input name="birthday" type="date" class="form-control" placeholder="Date de naissance" required>
                 </div>
                 <div class="form-group">
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select name="gender" class="form-control" id="exampleFormControlSelect1">
                         <option>homme</option>
                         <option>femme</option>
                         <option>autre</option>
                     </select>
                 </div>
-                <input class="mt-3 rounded bg-light " type="submit" name="connexion" value="s'inscrire">
+
+<button type="submit">Envoyer</button>
             </form>
         </div>
     </div>
