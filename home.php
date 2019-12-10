@@ -29,18 +29,27 @@
             <div class="card mb-3">
                 <div class="card-body">
 
-                    <form method="post">
-                        <label for="summary text-center"> Exprime toi ! </label>
-                        <textarea name="summary" id="summary"></textarea>
-                    <button> Publier ! </button>
-
+                        <div class="form-group">
+                            <div class="input-group-append">
+                        <textarea class="form-control " name="summary" id="summary" placeholder="exprime toi...."></textarea>
+                    <button class="btn btn-primary rounded bg-info ">Publier </button>
+                            </div>
+                </div>
+                    <img class="picture"  src="public/img/Home.svg"></a>
+                    <img class="emoji ml-2" src="public/img/emoji.svg"></a>
+                    <img class="music ml-2" src="public/img/musique.svg"></a>
                 </div>
 
             <div class="card mb-3 text-center">
                 <div class="card-body">
                     <img src="https://placehold.it/300x300">
+
                 </div>
-            </div>
+                <div class="mb-3">
+                <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                <button class="btn btn-primary  rounded bg-info "> Partager </button>
+            </div></div>
 
             <div class="card mb-3">
                     <img src="https://placehold.it/300x300">
