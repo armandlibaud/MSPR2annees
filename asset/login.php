@@ -1,20 +1,24 @@
 <?php
 require_once '../includes/helpers.php';
 
-if (!empty($_POST)) {
+$data = [];
+foreach ($_POST as $name => $value) {
+    $data[$name] = $value;
+}
 
-    $dbn = connectDB();
-    $query = $dbn ->prepare('SELECT * FROM users WHERE email = :email AND password = :password');
-    $query->execute([
-        'email' => $_POST['email'],
-        'password' => $_POST['password'],
-    ]);
+$dbh = connectDB();
+$stmt = $dbh->prepare('SELECT * FROM users WHERE email = :email LIMIT 1');
+$stmt->bindValue(':email', $data['email']);
+$stmt->execute();
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 
+if ($user['password'] === sha1($data['password'])):
+$_SESSION['auth_id'] = $user['id'];
+header('Location: ../home.php');
+exit;
+endif;
 
-
-    header('Location: ../home.php');
-    exit;
-};
+echo 'bug';
 

@@ -18,3 +18,36 @@ function dd($var){
     var_dump($var);
     die();
 }
+
+function getUser($id){
+    $dbh = connectDB();
+    $stmt = $dbh ->prepare('SELECT * FROM users WHERE id = :id');
+    $stmt-> bindValue(':id', $id);
+    $stmt-> execute();
+    return $stmt-> fetch(PDO::FETCH_ASSOC);
+}
+
+function getUsers(){
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT * FROM users');
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+
+function isAuth()
+{
+    return isset($_SESSION['auth_id']);
+}
+
+function getAuth(){
+    if(!isAuth()){
+        return false;
+    }
+    return getUser($_SESSION['auth_id']);
+}
+
+function getAUthId(){
+    $auth = getAuth();
+    return $auth['id'];
+}
