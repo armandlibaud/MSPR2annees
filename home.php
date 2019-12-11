@@ -17,6 +17,12 @@
                     <p class="text-left">Lorem ipsum</p>
                     <p class="text-left">Lorem ipsum</p>
                     <p class="text-left">Lorem ipsum</p>
+                    <p class="text-left">⇣ Voir plus...</p>
+                    <p class="text-left font-weight-bold"> Parcourir </p>
+                    <p class="text-left">Lorem ipsum</p>
+                    <p class="text-left">Lorem ipsum</p>
+                    <p class="text-left">Lorem ipsum</p>
+                    <p class="text-left">⇣ Voir plus...</p>
                 </div>
             </div>
         </div>
@@ -40,30 +46,68 @@
                     <img class="music ml-2" src="public/img/musique.svg"></a>
                 </div>
 
-            <div class="card mb-3 text-center">
+            <div class="card mb-3 mt-2 text-center">
                 <div class="card-body">
-                    <img src="https://placehold.it/300x300">
+                    <img src="https://placehold.it/600x400">
 
+                <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                    vitae voluptatum!
+                    Maiores, reprehenderit, voluptate!</p>
                 </div>
-                <div class="mb-3">
+                <div class="mb-2">
                 <button class="btn btn-primary  rounded bg-info "> Liker </button>
                 <button class="btn btn-primary rounded bg-info "> Commenter </button>
                 <button class="btn btn-primary  rounded bg-info "> Partager </button>
-            </div></div>
-
-            <div class="card mb-3">
-                    <img src="https://placehold.it/300x300">
+            </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 text-center">
+                    <img src="https://placehold.it/600x400">
+
+                <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                    vitae voluptatum!
+                    Maiores, reprehenderit, voluptate!</p>
+
+                <div class="mb-3 mt-3">
+                    <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                    <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                    <button class="btn btn-primary  rounded bg-info "> Partager </button>
+            </div>
+            </div>
+
+            <div class="card mb-3 text-center">
                 <div class="card-body">
-                    <img src="https://placehold.it/300x300">
+                    <img src="https://placehold.it/600x400">
+
+                    <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                        vitae voluptatum!
+                        Maiores, reprehenderit, voluptate!</p>
+
+                    <div class="mb-3 mt-3 text-center">
+                        <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                        <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                        <button class="btn btn-primary  rounded bg-info "> Partager </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 text-center">
                 <div class="card-body">
-                    <img src="https://placehold.it/300x300">
+                    <img src="https://placehold.it/600x400">
+
+                    <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                        vitae voluptatum!
+                        Maiores, reprehenderit, voluptate!</p>
+
+                    <div class="mb-3 mt-3 text-center">
+                        <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                        <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                        <button class="btn btn-primary  rounded bg-info "> Partager </button>
+                    </div>
                 </div>
             </div>
 
