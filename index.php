@@ -1,4 +1,7 @@
-<?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/header.php';
+
+
+?>
 <?php use Carbon\Carbon; ?>
 
     <section >

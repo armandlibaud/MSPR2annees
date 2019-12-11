@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/mspr/env.php';
+session_start();
 
 function connectDB(){
     try {

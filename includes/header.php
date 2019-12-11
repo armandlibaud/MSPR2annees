@@ -38,7 +38,12 @@
                 <nav>
                     <b> <a class="a" href="home.php"> Accueil | </a> </b>
                     <b> <a class="a" href="profil.php"> Mon profil | </a> </b>
-                    <b> <a class="a" href="register.php"> Connexion</a> </b>
+                    <?php if(isAuth()): ?>
+                        <b> <a class="a" href="index.php"> Déconnexion</a> </b>
+                    <?php else: ?>
+                         <b> <a class="a" href="index.php"> Connexion</a> </b>
+                    <?php endif; ?>
+
 
                     <form class="recherche" action="recherche.php">
                         <input type="search" name="search" placeholder="Armand Libaud">

@@ -21,7 +21,7 @@
                     <input name="password" type="password" class="form-control" placeholder="Mot de passe" required>
                 </div>
                 <div class="form-group">
-                    <input name="birthday" type="date" class="form-control" placeholder="Date de naissance" required>
+                    <input name="birthday" type="date" class="form-control" placeholder="Date de naissance" >
                 </div>
                 <div class="form-group">
                     <select name="gender" class="form-control" id="exampleFormControlSelect1">

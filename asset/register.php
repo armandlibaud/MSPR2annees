@@ -11,13 +11,13 @@ $stmt = $dbh->prepare('INSERT INTO users (first_name, last_name, email, password
 $stmt->bindValue(':first_name', $data['first_name']);
 $stmt->bindValue(':last_name', $data['last_name']);
 $stmt->bindValue(':email', $data['email']);
-$stmt->bindValue(':password', sha1($data['password'])); // il faut compare rles deux cryptage lors de la connexion
+$stmt->bindValue(':password', sha1($data['password']));
 $stmt->execute();
 
 $id = $dbh->lastInsertId();
 $sql = "SELECT * 
 FROM users 
-WHERE email = :email";
+WHERE email = :email limit 1";
 
 
 

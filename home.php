@@ -11,8 +11,11 @@
                 <div class="card-body">
                     <h5 class="mb-4">
                         <?php
-                        $dbh = connectDB();
-                        echo $_POST['first_name']; ?>
+
+                        echo getAUth()['first_name']; ?> <?php echo  getAUth()['last_name']; ?>
+                    </h5>
+                    <h5>
+                        <?php echo getAuth()['birthday']; ?>
                     </h5>
                     <a href="logout.php">Se deconnecter</a>
                     <p class="text-left">Fil d'actualité</p>
