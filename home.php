@@ -1,4 +1,5 @@
 <?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/helpers.php'; ?>
 
 <div class="container mt-5">
     <div class="row">
@@ -8,7 +9,12 @@
                     <p>Mon profil </p>
                 </div>
                 <div class="card-body">
-                    <h5 class="mb-4">Prénom - Nom de la personne</h5>
+                    <h5 class="mb-4">
+                        <?php
+                        $dbh = connectDB();
+                        echo $_POST['first_name']; ?>
+                    </h5>
+                    <a href="logout.php">Se deconnecter</a>
                     <p class="text-left">Fil d'actualité</p>
                     <p class="text-left">Messages</p>
                     <p class="text-left">Lorem ipsum </p>
@@ -35,50 +41,34 @@
             <div class="card mb-3">
                 <div class="card-body">
 
-                        <div class="form-group">
-                            <div class="input-group-append">
-                        <textarea class="form-control " name="summary" id="summary" placeholder="exprime toi...."></textarea>
-                    <button class="btn btn-primary rounded bg-info ">Publier </button>
-                            </div>
-                </div>
+                    <div class="form-group">
+                        <div class="input-group-append">
+                            <textarea class="form-control " name="summary" id="summary" placeholder="exprime toi...."></textarea>
+                            <button class="btn btn-primary rounded bg-info ">Publier </button>
+                        </div>
+                    </div>
                     <img class="picture"  src="public/img/Home.svg"></a>
                     <img class="emoji ml-2" src="public/img/emoji.svg"></a>
                     <img class="music ml-2" src="public/img/musique.svg"></a>
                 </div>
 
-            <div class="card mb-3 mt-2 text-center">
-                <div class="card-body">
-                    <img src="https://placehold.it/600x400">
+                <div class="card mb-3 mt-2 text-center">
+                    <div class="card-body">
+                        <img src="https://placehold.it/600x400">
 
-                <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
-                    vitae voluptatum!
-                    Maiores, reprehenderit, voluptate!</p>
+                        <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                            vitae voluptatum!
+                            Maiores, reprehenderit, voluptate!</p>
+                    </div>
+                    <div class="mb-2">
+                        <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                        <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                        <button class="btn btn-primary  rounded bg-info "> Partager </button>
+                    </div>
                 </div>
-                <div class="mb-2">
-                <button class="btn btn-primary  rounded bg-info "> Liker </button>
-                <button class="btn btn-primary rounded bg-info "> Commenter </button>
-                <button class="btn btn-primary  rounded bg-info "> Partager </button>
-            </div>
-            </div>
 
-            <div class="card mb-3 text-center">
-                    <img src="https://placehold.it/600x400">
-
-                <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
-                    vitae voluptatum!
-                    Maiores, reprehenderit, voluptate!</p>
-
-                <div class="mb-3 mt-3">
-                    <button class="btn btn-primary  rounded bg-info "> Liker </button>
-                    <button class="btn btn-primary rounded bg-info "> Commenter </button>
-                    <button class="btn btn-primary  rounded bg-info "> Partager </button>
-            </div>
-            </div>
-
-            <div class="card mb-3 text-center">
-                <div class="card-body">
+                <div class="card mb-3 text-center">
                     <img src="https://placehold.it/600x400">
 
                     <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
@@ -86,34 +76,50 @@
                         vitae voluptatum!
                         Maiores, reprehenderit, voluptate!</p>
 
-                    <div class="mb-3 mt-3 text-center">
+                    <div class="mb-3 mt-3">
                         <button class="btn btn-primary  rounded bg-info "> Liker </button>
                         <button class="btn btn-primary rounded bg-info "> Commenter </button>
                         <button class="btn btn-primary  rounded bg-info "> Partager </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="card mb-3 text-center">
-                <div class="card-body">
-                    <img src="https://placehold.it/600x400">
+                <div class="card mb-3 text-center">
+                    <div class="card-body">
+                        <img src="https://placehold.it/600x400">
 
-                    <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
-                        vitae voluptatum!
-                        Maiores, reprehenderit, voluptate!</p>
+                        <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                            vitae voluptatum!
+                            Maiores, reprehenderit, voluptate!</p>
 
-                    <div class="mb-3 mt-3 text-center">
-                        <button class="btn btn-primary  rounded bg-info "> Liker </button>
-                        <button class="btn btn-primary rounded bg-info "> Commenter </button>
-                        <button class="btn btn-primary  rounded bg-info "> Partager </button>
+                        <div class="mb-3 mt-3 text-center">
+                            <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                            <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                            <button class="btn btn-primary  rounded bg-info "> Partager </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="card mb-3 text-center">
+                    <div class="card-body">
+                        <img src="https://placehold.it/600x400">
+
+                        <p class="mt-3 text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sapiente! Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Accusamus eum fugit magni nihil, possimus veniam
+                            vitae voluptatum!
+                            Maiores, reprehenderit, voluptate!</p>
+
+                        <div class="mb-3 mt-3 text-center">
+                            <button class="btn btn-primary  rounded bg-info "> Liker </button>
+                            <button class="btn btn-primary rounded bg-info "> Commenter </button>
+                            <button class="btn btn-primary  rounded bg-info "> Partager </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
 
-<?php require_once 'includes/footer.php'; ?>
+    <?php require_once 'includes/footer.php'; ?>
