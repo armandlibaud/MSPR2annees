@@ -24,7 +24,7 @@
             <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Englebert" rel="stylesheet">
 
-            <script src="https://www.google.com/recaptcha/api.js"></script>
+
 
         </head>
 <body>
@@ -36,18 +36,20 @@
 
             <div class="navbar col-lg-6">
                 <nav>
+                    <?php if(isAuth()): ?>
                     <b> <a class="a" href="home.php"> Accueil | </a> </b>
                     <b> <a class="a" href="profil.php"> Mon profil | </a> </b>
-                    <?php if(isAuth()): ?>
-                        <b> <a class="a" href="index.php"> Déconnexion</a> </b>
-                    <?php else: ?>
-                         <b> <a class="a" href="index.php"> Connexion</a> </b>
+
+                        <b> <a class="a" href="logout.php"> Déconnexion</a> </b
+                        ><form class="recherche" action="recherche.php">
+                        <input type="search" name="search" placeholder="Armand Libaud">
+                        <button class="ok">Rechercher</button>
+
+                        <?php else: ?>
+                            <h2 class="h1">BE SOCIAL</h2>
                     <?php endif; ?>
 
 
-                    <form class="recherche" action="recherche.php">
-                        <input type="search" name="search" placeholder="Armand Libaud">
-                        <button class="ok">Rechercher</button>
 
                     </form>
 

@@ -17,7 +17,7 @@
                     <h5>
                         <?php echo getAuth()['birthday']; ?>
                     </h5>
-                    <a href="logout.php">Se deconnecter</a>
+
                     <p class="text-left">Fil d'actualité</p>
                     <p class="text-left">Messages</p>
                     <p class="text-left">Lorem ipsum </p>
@@ -46,8 +46,11 @@
 
                     <div class="form-group">
                         <div class="input-group-append">
-                            <textarea class="form-control " name="summary" id="summary" placeholder="exprime toi...."></textarea>
-                            <button class="btn btn-primary rounded bg-info ">Publier </button>
+                            <form action="./asset/add.php">
+                            <textarea class="form-control " name="content" id="summary" placeholder="exprime toi...."></textarea>
+
+                            <button type="submit" class="btn btn-primary rounded bg-info text-decoration-none ">Publier </button>
+                            </form>
                         </div>
                     </div>
                     <img class="picture"  src="public/img/Home.svg"></a>

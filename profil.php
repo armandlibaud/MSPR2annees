@@ -1,13 +1,19 @@
 
 <?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/helpers.php'; ?>
 
 <link rel= "stylesheet" href="public/css/app.css">
 <div class="container">
 <div class="row">
     <div class="col-lg-6">
-    <img src="public/img/john.jpg"alt="John" class="col-mt-4">
 
-    <h1>John Doe</h1>
+    <h1>    <?php
+
+        echo getAUth()['first_name']; ?> <?php echo  getAUth()['last_name']; ?>
+        </h1>
+
+            <?php echo getAuth()['birthday']; ?>
+
     <p class="titleprofil">CEO & Founder, Example</p>
     <p>Harvard University</p>
     <p><button class="text-center">Message</button></p>

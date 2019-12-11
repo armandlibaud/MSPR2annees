@@ -1,8 +1,8 @@
 <?php
-require_once './includes/helpers.php';
+require_once '../includes/helpers.php';
 $data = [];
-foreach ($_POST as $index => $value) {
-    $data[$index] = $value;
+foreach ($_POST as $content => $value) {
+    $data[$content] = $value;
 };
 
 $dbh = connectDB();
@@ -13,7 +13,10 @@ $stmt->execute();
 
 
 
+$id = $dbh->lastInsertId();
 
 
-header("Location: home.php");
+header('Location: ../home.php');
+exit;
+
 
