@@ -1,5 +1,5 @@
-<div class="collapse py-5 " id="debug">
-    <div class="container">
+<div class="collapse" id="debug">
+    <div class="container py-5">
         <div class="row">
             <div class="col">
                 <div class="card">

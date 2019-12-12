@@ -1,9 +1,8 @@
-<div class="card mb-3">
+<div class="card mt-3">
     <div class="card-body">
-        <div class="font-weight-bolder">
 
-        <?php echo getAUth()['first_name']; ?> <?php echo getAUth()['last_name'];  ?> : </div>
-        <?php echo $post['content']; ?>
+        <p><?php echo $post['content']; ?></p>
+        <small class="text-muted"><?php echo $post['first_name'] . ' ' . $post['last_name']; ?></small>
 
     </div>
 </div>

@@ -1,0 +1,43 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #becece;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+}
+/* logo + "Besocial" */
+.titre{
+  display: flex;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+}
+
+.logo{
+  position: relative;
+  height: 75px;
+  width: 75px;
+}
+
+
+.navbar{
+  text-align: right;
+  flex:1;
+  text-decoration: none;
+}
+
+.recherche{
+  padding-left: 18px;
+  display: inline;
+}
+
+.ok{
+  background-color: #153c49;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}

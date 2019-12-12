@@ -57,13 +57,14 @@ function getAUthId(){
 
 function getPosts(){
     $dbh = connectDB();
-    $stmt = $dbh->prepare('SELECT * FROM posts ORDER BY date_created DESC');
+    $stmt = $dbh->prepare('SELECT posts.*, users.first_name, users.last_name FROM posts LEFT JOIN users ON posts.author_id = users.id ORDER BY date_created DESC');
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 }
+
 function getPostsId()
 {
     $auth = getPost();
     return $auth['id'];
 }
+

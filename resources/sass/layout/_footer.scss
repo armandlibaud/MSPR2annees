@@ -1,0 +1,30 @@
+
+/** footer **/
+footer{
+  background-color: #becece;
+  position: relative;
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  width: 100%;
+  box-sizing : border-box;
+  padding: 12px;
+  text-align: center;
+}
+
+.footer{
+  margin-top: 30px;
+}
+
+.copyright{
+  font-size: 25px;
+}
+
+/* nom des pages dans header et footer */
+.a{
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+
+}
