@@ -8,12 +8,10 @@ foreach ($_POST as $content => $value) {
 $dbh = connectDB();
 $stmt = $dbh->prepare('INSERT INTO posts (content) VALUES (:content)');
 $stmt->bindValue(':content', $data['content']);
-
 $stmt->execute();
 
-
-
 $id = $dbh->lastInsertId();
+
 
 
 header('Location: ../home.php');
