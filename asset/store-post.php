@@ -20,7 +20,7 @@ $stmt->execute();
 $id = $dbh->lastInsertId();
 
 if ($id) {
-    header('Location: ../home.php?success');
+    header('Location: ../home.php');
     exit;
 }
 

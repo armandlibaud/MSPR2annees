@@ -52,3 +52,18 @@ function getAUthId(){
     $auth = getAuth();
     return $auth['id'];
 }
+
+//foreach autour de gepost dans la page home
+
+function getPosts(){
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT * FROM posts ORDER BY date_created DESC');
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+function getPostsId()
+{
+    $auth = getPost();
+    return $auth['id'];
+}
