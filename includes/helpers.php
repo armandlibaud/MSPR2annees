@@ -62,9 +62,11 @@ function getPosts(){
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getPostsId()
-{
-    $auth = getPost();
-    return $auth['id'];
+function getPostsId($id){
+    $dbh = connectDB();
+    $stmt = $dbh->prepare('SELECT posts.*, users.first_name, users.last_name FROM posts LEFT JOIN users ON posts.author_id = users.id WHERE author_id = :id ORDER BY date_created DESC');
+    $stmt-> bindValue(':id', $id);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 

@@ -11406,6 +11406,26 @@ header {
   cursor: pointer;
 }
 
+.header-links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.header-links a {
+  list-style-type: none;
+}
+
+.header-links a:not(:last-child) {
+  border-right: 1px solid #6c757d;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+}
+
 /** footer **/
 
 footer {

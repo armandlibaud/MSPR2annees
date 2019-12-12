@@ -41,3 +41,25 @@ header{
   cursor: pointer;
 
 }
+
+
+.header-links {
+  display: flex;
+  justify-content: center;
+
+  a {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      border-right: 1px solid $secondary;
+
+
+
+      padding: 5px;
+      text-decoration: none;
+      color: black;
+      font-family: 'Amatic SC', cursive;
+      font-size: 25px;
+    }
+  }
+}

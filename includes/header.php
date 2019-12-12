@@ -45,14 +45,16 @@
 
 
             <?php if (isAuth()): ?>
-            <b> <a class="a" href="home.php"> Accueil | </a> </b>
-            <b> <a class="a" href="profil.php"> Mon profil | </a> </b>
+            <div class="header-links ">
+             <a class="a text-dark" href="home.php"> Accueil | </a>
+             <a class="a text-dark" href="profil.php"> Mon profil | </a>
 
 
-            <b> <a class="a" href="logout.php"> Déconnexion</a></b>
+             <a class="a text-dark" href="logout.php"> Déconnexion</a>
             <form class="recherche" action="recherche.php">
                 <input type="search" name="search" placeholder="Armand Libaud">
                 <button class="ok">Rechercher</button>
+            </div>
 
                 <?php else: ?>
                     <h2 class="h1">BE SOCIAL</h2>
