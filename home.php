@@ -46,7 +46,7 @@
 
                     <div class="form-group">
                         <div class="input-group-append">
-                            <form action="./asset/add.php">
+                            <form action="./asset/create.php" method="POST">
                             <textarea class="form-control " name="content" id="summary" placeholder="exprime toi...."></textarea>
 
                             <button type="submit" class="btn btn-primary rounded bg-info text-decoration-none ">Publier </button>
