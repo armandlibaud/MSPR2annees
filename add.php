@@ -17,3 +17,4 @@ $stmt->execute();
 
 header("Location: home.php");
 
+?>

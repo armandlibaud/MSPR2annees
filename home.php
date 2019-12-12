@@ -36,8 +36,6 @@
             </div>
         </div>
 
-
-
         <div class="col-lg-8">
             <h2 class="text-center"> Fil d'actualité </h2>
 
@@ -51,6 +49,7 @@
 
                             <button type="submit" class="btn btn-primary rounded bg-info text-decoration-none ">Publier </button>
                             </form>
+
                         </div>
                     </div>
                     <img class="picture"  src="public/img/Home.svg"></a>
