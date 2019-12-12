@@ -17,11 +17,6 @@
 
                     <p class="text-left">Fil d'actualité</p>
                     <p class="text-left">Messages</p>
-                    <li class="nav-item ">
-                        <a href="#debug" data-toggle="collapse" class=" text-success">
-                            DEBUG
-                        </a>
-                    </li>
                     <p class="text-left">Lorem ipsum </p>
                     <p class="text-left mb-4"> Lorem ipsum</p>
                     <p class="text-left font-weight-bold"> Raccourci </p>
@@ -61,9 +56,9 @@
 
 
                     </form>
-                    <img class="picture" src="public/img/Home.svg"></a>
-                    <img class="emoji ml-2" src="public/img/emoji.svg"></a>
-                    <img class="music ml-2" src="public/img/musique.svg"></a>
+                    <img class="picture mt-2" src="public/img/Home.svg"></a>
+                    <img class="emoji mt-2" src="public/img/emoji.svg"></a>
+                    <img class="music mt-2" src="public/img/musique.svg"></a>
                 </div>
 
 

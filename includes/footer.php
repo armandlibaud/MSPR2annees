@@ -1,19 +1,31 @@
 </main>
 
-    <footer class="footer">
+<footer class="footer">
 
-        <div class="copyright">
-            &copy;2019 | BeSocial
-        </div>
+    <div class="copyright">
+        &copy;<?php echo date('Y'); ?> | BeSocial
+    </div>
 
-        <br>
+    <ul class="footer-links">
+        <li>
+            <a href="index.php">Accueil</a>
+        </li>
+        <li>
+            <a href="mentions.php">Mentions Légales</a>
+        </li>
+        <li>
+            <a href="like.php">Mon profil</a>
+        </li>
+        <li>
+            <a href="contact.php">Contact</a>
+        </li>
+        <li>
+            <a href="#debug" data-toggle="collapse">Debug</a>
+        </li>
+    </ul>
 
-        <b> <a class="a" href="index.php">Accueil | </a> </b>
-        <b> <a class="a" href="like.php"> Mon profil | </a> </b>
-        <b> <a class="a" href="mentions.php">Mentions Légales |</a> </b>
-        <b> <a class="a" href="contact.php">Contact</a> </b>
 
-    </footer>
+</footer>
 </div>
 <script src="public/js/manifest.js"></script>
 <script src="public/js/vendor.js"></script>

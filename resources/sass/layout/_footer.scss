@@ -1,30 +1,40 @@
-
 /** footer **/
-footer{
+footer {
   background-color: #becece;
   position: relative;
   display: block;
   font-family: 'Amatic SC', cursive;
   width: 100%;
-  box-sizing : border-box;
+  box-sizing: border-box;
   padding: 12px;
   text-align: center;
 }
 
-.footer{
+.footer {
   margin-top: 30px;
 }
 
-.copyright{
+.copyright {
   font-size: 25px;
 }
 
-/* nom des pages dans header et footer */
-.a{
-  padding: 5px;
-  text-decoration: none;
-  color: black;
-  font-family: 'Amatic SC', cursive;
-  font-size: 25px;
+.footer-links {
+  display: flex;
+  justify-content: center;
 
+  li {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      border-right: 1px solid $secondary;
+    }
+
+    a {
+      padding: 5px;
+      text-decoration: none;
+      color: black;
+      font-family: 'Amatic SC', cursive;
+      font-size: 25px;
+    }
+  }
 }

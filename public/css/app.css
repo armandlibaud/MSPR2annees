@@ -11427,9 +11427,22 @@ footer {
   font-size: 25px;
 }
 
-/* nom des pages dans header et footer */
+.footer-links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
 
-.a {
+.footer-links li {
+  list-style-type: none;
+}
+
+.footer-links li:not(:last-child) {
+  border-right: 1px solid #6c757d;
+}
+
+.footer-links li a {
   padding: 5px;
   text-decoration: none;
   color: black;
