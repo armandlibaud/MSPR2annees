@@ -10,6 +10,7 @@ $id = isset($_SESSION['auth_id']) ? $_SESSION['auth_id'] : null;
             <?php echo getAuth()['birthday']; ?>
             <p class="titleprofil">Poste</p>
             <p>etudes</p>
+
             <button class="text-center">Message</button>
         </div>
         <div class="col-lg-6">
@@ -19,7 +20,9 @@ $id = isset($_SESSION['auth_id']) ? $_SESSION['auth_id'] : null;
                     <?php //foreach (getPosts() as $post) {
                           foreach (getPostsId($id) as $post) {
                         require './item-post.php';
+
                     }; ?>
+
                 </div>
             </div>
         </div>

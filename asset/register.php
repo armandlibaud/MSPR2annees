@@ -20,6 +20,5 @@ FROM users
 WHERE email = :email limit 1";
 
 
-
-header('Location: ../home.php');
+header('Location: ../register-end.php');
 

@@ -14,7 +14,7 @@
             <a href="mentions.php">Mentions Légales</a>
         </li>
         <li>
-            <a href="like.php">Mon profil</a>
+            <a href="profil.php">Mon profil</a>
         </li>
         <li>
             <a href="contact.php">Contact</a>
