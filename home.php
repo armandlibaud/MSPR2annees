@@ -10,8 +10,9 @@
                 </div>
                 <div class="card-body">
                     <h5 class="mb-4">
+                        <img class="mt-2 mb-3 img-thumbnail" src="https://www.gravatar.com/avatar/<?php echo md5(getAuth()['email']); ?>?s=600">
                         <?php
-
+                        //Permet d'afficher le prénom et le nom de l'utilisateur connecté
                         echo getAUth()['first_name']; ?> <?php echo getAUth()['last_name']; ?>
                     </h5>
 
@@ -61,7 +62,7 @@
                     <img class="music mt-2" src="public/img/musique.svg"></a>
                 </div>
 
-
+            <!-- permet d'afficher la liste des articles publié sur le site -->
             <?php foreach (getPosts() as $post) {
                 require './item-post.php';
             }; ?>
